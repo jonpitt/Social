@@ -66,10 +66,10 @@
 				7061019C1E207E5700924B33 /* Controller */,
 				7061019B1E207E4F00924B33 /* View */,
 				7061019A1E207E3900924B33 /* Model */,
-				7061018D1E207A1A00924B33 /* Assets.xcassets */,
 				7061018A1E207A1A00924B33 /* Main.storyboard */,
 				706101861E207A1A00924B33 /* AppDelegate.swift */,
 				7061018F1E207A1A00924B33 /* LaunchScreen.storyboard */,
+				7061018D1E207A1A00924B33 /* Assets.xcassets */,
 				706101921E207A1A00924B33 /* Info.plist */,
 				706101981E207B9D00924B33 /* GoogleService-Info.plist */,
 			);
