@@ -21,6 +21,7 @@
 		7061018E1E207A1A00924B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7061018D1E207A1A00924B33 /* Assets.xcassets */; };
 		706101911E207A1A00924B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7061018F1E207A1A00924B33 /* LaunchScreen.storyboard */; };
 		706101991E207B9D00924B33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 706101981E207B9D00924B33 /* GoogleService-Info.plist */; };
+		70C4701B1E34381D004D6AB6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C4701A1E34381D004D6AB6 /* DataService.swift */; };
 		ABCB8536B732B75F13FDB5BC /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21D0B6DADC60985036D4EA7 /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		706101901E207A1A00924B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		706101921E207A1A00924B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		706101981E207B9D00924B33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70C4701A1E34381D004D6AB6 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8DA9232DA583FACB98EB5AA0 /* Pods-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig"; sourceTree = "<group>"; };
 		E21D0B6DADC60985036D4EA7 /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		706101851E207A1A00924B33 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				70C470191E3437F3004D6AB6 /* Services */,
 				702218BB1E25C97100C6E465 /* Social.entitlements */,
 				7061019A1E207E3900924B33 /* Model */,
 				70106CBF1E20E9B60086C1B1 /* Util */,
@@ -130,6 +133,14 @@
 				7036D3C41E25C39100EE19C9 /* FeedVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		70C470191E3437F3004D6AB6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70C4701A1E34381D004D6AB6 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		82A066DDF21DEDD0C9D88E9E /* Pods */ = {
@@ -284,6 +295,7 @@
 				706101891E207A1A00924B33 /* SignInVC.swift in Sources */,
 				70106CC31E20EC670086C1B1 /* RoundBtn.swift in Sources */,
 				706101871E207A1A00924B33 /* AppDelegate.swift in Sources */,
+				70C4701B1E34381D004D6AB6 /* DataService.swift in Sources */,
 				7036D3C51E25C39100EE19C9 /* FeedVC.swift in Sources */,
 				70106CBE1E20E7970086C1B1 /* FancyView.swift in Sources */,
 				70106CC11E20E9CD0086C1B1 /* Constants.swift in Sources */,

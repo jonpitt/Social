@@ -136,11 +136,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfs-4N-Zgw" customClass="FancyView" customModule="Social" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-yP-U3p">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-yP-U3p">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="7CK-bg-3WU"/>
                                             <constraint firstAttribute="width" constant="45" id="f9y-au-fiV"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="afB-5f-OQT" appends="YES" id="UwV-J6-UdC"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxM-J7-zgC">
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
@@ -241,6 +245,7 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="jDX-2P-D3k" secondAttribute="trailing" constant="8" id="F8K-12-jgo"/>
+                                                                <constraint firstItem="fy7-Wj-8im" firstAttribute="trailing" secondItem="Le3-O2-auk" secondAttribute="trailing" constant="10" id="QNl-45-Rrs"/>
                                                                 <constraint firstItem="jDX-2P-D3k" firstAttribute="leading" secondItem="3qV-Jt-fhu" secondAttribute="leading" constant="8" id="WNm-Ga-i2u"/>
                                                                 <constraint firstAttribute="trailing" secondItem="fy7-Wj-8im" secondAttribute="trailing" constant="8" id="df2-Iy-fq3"/>
                                                                 <constraint firstItem="fy7-Wj-8im" firstAttribute="leading" secondItem="3qV-Jt-fhu" secondAttribute="leading" constant="8" id="qrL-Qg-00y"/>
@@ -311,6 +316,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ap6-UU-5no" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="afB-5f-OQT">
+                    <connections>
+                        <action selector="signOutTapped:" destination="pzk-aJ-2jT" id="BWY-Cn-TAy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="137.18140929535232"/>
         </scene>
